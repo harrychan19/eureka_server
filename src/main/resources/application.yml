@@ -3,12 +3,12 @@ server:
 
 eureka:
   instance:
-    hostname: 106.13.50.185
+    hostname: 192.168.22.5
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
+    eviction-interval-timer-in-ms: 10000
     enable-self-preservation: false
-    eviction-interval-timer-in-ms: 0
