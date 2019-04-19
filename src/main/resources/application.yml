@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: 192.168.22.5
+    hostname: 127.0.0.1
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -12,3 +12,6 @@ eureka:
   server:
     eviction-interval-timer-in-ms: 10000
     enable-self-preservation: false
+spring:
+  zipkin:
+    base-url: http://localhost:9411/
